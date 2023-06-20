@@ -8,26 +8,28 @@
 
 ## 📚 Usage
 
+This action performs a split for the `>>` informed in each line of the `parameters` input, to identify the `old value` to replace and the `new value` to set instead.
+
 ### Simple value
 
 ```yaml
 - name: Replace simple value in a specific file
-  uses: GuillaumeFalourd/replace-values-action@v1
+  uses: GuillaumeFalourd/replace-values-action@v1.1
   with:
     file_path: ./path/to/file
-    parameters: value1::value2
+    parameters: value1 >> value2
 ```
 
 ### Multiline values
 
 ```yaml
 - name: Replace multiple values in a specific file
-  uses: GuillaumeFalourd/replace-values-action@v1
+  uses: GuillaumeFalourd/replace-values-action@v1.1
   with:
     file_path: ./path/to/file
     parameters: |
-       current_value_1::new_value_1
-       current_value_2::new_value_2
+       current_value_1 >> new_value_1
+       current_value_2 >> new_value_2
        
 ```
 
@@ -36,7 +38,7 @@
 Field | Mandatory | Observation
 ------------ | ------------  | -------------
 **file_path** | YES | Path to the file to update.
-**parameters** | YES | `value_to_replace::new_value` (can be an array).
+**parameters** | YES | `value_to_replace >> new_value` (can be an array).
 
 ## 🤝 Contributing
 

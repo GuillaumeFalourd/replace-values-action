@@ -20,15 +20,15 @@ jobs:
         uses: GuillaumeFalourd/replace-values-action@main
         with:
           file_path: ${{github.workspace}}/test.yaml
-          parameters: REGISTRY_TO_UPDATE::new_registry_value
+          parameters: REGISTRY_TO_UPDATE >> new_registry_value
 
       - name: Replace multiple values
         uses: GuillaumeFalourd/replace-values-action@main
         with:
           file_path: ${{github.workspace}}/test.yaml
           parameters: |
-            ACCOUNT_TO_UPDATE::new_account_value
-            URL_TO_UPDATE::new_url_value   
+            ACCOUNT_TO_UPDATE>>new_account_value
+            URL_TO_UPDATE >> new_url_value   
         
       - name: Show updated file
         run: cat ${{github.workspace}}/test.yaml
