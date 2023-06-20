@@ -31,22 +31,22 @@
        
 ```
 
-## 🗂 Changelog
-
-### v1
-
-This version performs a split for the `::` informed in each line of the `parameters` input, to identify the `old value` to replace and the `new value` to set instead.
-
-### v1.1
-
-This version performs a split for the `>>` informed in each line of the `parameters` input, to identify the `old value` to replace and the `new value` to set instead.
-
 ## ▶️ Action Inputs
 
 Field | Mandatory | Observation
 ------------ | ------------  | -------------
 **file_path** | YES | Path to the file to update.
 **parameters** | YES | `value_to_replace >> new_value` (can be an array).
+
+## 🗂 Changelog
+
+### `@v1`
+
+This version performs a split for the `::` informed in each line of the `parameters` input, to identify the `old value` to replace and the `new value` to set instead.
+
+### `@v1.1`
+
+This version performs a split for the `>>` informed in each line of the `parameters` input, to identify the `old value` to replace and the `new value` to set instead.
 
 ## 🤝 Contributing
 
