@@ -28,11 +28,3 @@ main() {
 }
 
 main
-
-
-
-stk deploy status <DEPLOYID>
-
-pluginApplyId: SUCCESS
-plugin2: SUCCESS
-plugin3: SUCCESS
