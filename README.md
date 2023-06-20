@@ -8,8 +8,6 @@
 
 ## 📚 Usage
 
-This action performs a split for the `>>` informed in each line of the `parameters` input, to identify the `old value` to replace and the `new value` to set instead.
-
 ### Simple value
 
 ```yaml
@@ -32,6 +30,16 @@ This action performs a split for the `>>` informed in each line of the `paramete
        current_value_2 >> new_value_2
        
 ```
+
+## 🗂 Changelog
+
+### v1
+
+This version performs a split for the `::` informed in each line of the `parameters` input, to identify the `old value` to replace and the `new value` to set instead.
+
+### v1.1
+
+This version performs a split for the `>>` informed in each line of the `parameters` input, to identify the `old value` to replace and the `new value` to set instead.
 
 ## ▶️ Action Inputs
 
